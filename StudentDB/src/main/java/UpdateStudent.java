@@ -22,9 +22,7 @@ public class UpdateStudent {
 		
 		System.out.println("---------------------------");
 		
-		System.out.println("Enter new Id : ");
 		student.setAge(115);
-		System.out.println("Enter new Name : ");
 		student.setName("Nora");
 		
 		entityTransaction.begin();
