@@ -1,11 +1,15 @@
 package com.employee2;
 
+import java.util.List;
 import java.util.Scanner;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+import customexceptions.InvalidIDFoundExcepiton;
 
 public class UpdateEmployee {
 	public void updateEmployee() {
@@ -17,23 +21,36 @@ public class UpdateEmployee {
 		System.out.println("Enter Employee Id : ");
 		int id = ip.nextInt();
 
-		Employee employee = entityManager.find(Employee.class, id);
+		Query query = entityManager.createQuery("select e.id from Employee e");
 
-		System.out.println("Enter Employee Name : ");
-		String name = ip.next();
-		System.out.println("Enter Employee Age : ");
-		int age = ip.nextInt();
-		System.out.println("Enter Employee Name : ");
-		int sal = ip.nextInt();
+		List<Integer> id_list = query.getResultList();
 
-		employee.setName(name);
-		employee.setAge(age);
-		employee.setSal(sal);
+		if (id_list.contains(id)) {
+			Employee employee = entityManager.find(Employee.class, id);
 
-		entityTransaction.begin();
-		entityManager.merge(employee);
-		entityTransaction.commit();
-		
-		System.out.println("Employee updated successfully.");
+			System.out.println("Enter Employee Name : ");
+			String name = ip.next();
+			System.out.println("Enter Employee Age : ");
+			int age = ip.nextInt();
+			System.out.println("Enter Employee Name : ");
+			int sal = ip.nextInt();
+
+			employee.setName(name);
+			employee.setAge(age);
+			employee.setSal(sal);
+
+			entityTransaction.begin();
+			entityManager.merge(employee);
+			entityTransaction.commit();
+
+			System.out.println("Employee updated successfully.");
+		} else {
+			try {
+				throw new InvalidIDFoundExcepiton("ID not found in Database. Please enter valid ID");
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
+		}
+
 	}
 }

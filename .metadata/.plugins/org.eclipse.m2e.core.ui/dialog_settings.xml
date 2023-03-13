@@ -2,8 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="F:\HIbernate Workspace\ManyToOne\src\main\java\com\manytoone1\MainClass.java"/>
-			<item value="F:\HIbernate Workspace\OneToMany\src\main\java\com\onetomany1\MainClass.java"/>
+			<item value="F:\HIbernate Workspace\BiOneToOne\src\main\java\com\bionetoone\MainClass.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -46,6 +45,9 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.bionetomany"/>
+			<item value="com.bionetoone"/>
+			<item value="com.employee1"/>
 			<item value="com.manytomany"/>
 			<item value="com.manytoone"/>
 			<item value="com.onetomany"/>
@@ -56,6 +58,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="BiOneToMany"/>
+			<item value="BiOneToOne"/>
+			<item value="EmployeeDB"/>
 			<item value="ManyToMany"/>
 			<item value="ManyToOne"/>
 			<item value="OneToMany"/>
