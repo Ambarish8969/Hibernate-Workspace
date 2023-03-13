@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="F:\HIbernate Workspace\Hibernate2\src\main\java\com\ty\MainClass.java"/>
-			<item value="F:\HIbernate Workspace\MavenPro1\pom.xml"/>
+			<item value="F:\HIbernate Workspace\ManyToOne\src\main\java\com\manytoone1\MainClass.java"/>
+			<item value="F:\HIbernate Workspace\OneToMany\src\main\java\com\onetomany1\MainClass.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -46,12 +46,20 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.manytomany"/>
+			<item value="com.manytoone"/>
+			<item value="com.onetomany"/>
+			<item value="com.onetoone"/>
 			<item value="com.student1"/>
 			<item value="com.maven2"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="ManyToMany"/>
+			<item value="ManyToOne"/>
+			<item value="OneToMany"/>
+			<item value="OnetoOne"/>
 			<item value="StudentDB"/>
 			<item value="Hibernate2"/>
 		</list>
@@ -70,5 +78,17 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenCheckoutLocationPage">
+		<list key="scmUrl">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
 	</section>
 </section>
