@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="F:\HIbernate Workspace\OnetoOne\src\main\java\com\one2one\MainClass.java"/>
+			<item value="F:\HIbernate Workspace\EmployeeDB\src\main\java\com\employee2\DeleteEmployee.java"/>
 			<item value="F:\HIbernate Workspace\BiOneToOne\src\main\java\com\bionetoone\MainClass.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -45,6 +47,8 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.cascading"/>
+			<item value="com.bimanytomany"/>
 			<item value="com.bionetomany"/>
 			<item value="com.bionetoone"/>
 			<item value="com.employee1"/>
@@ -58,6 +62,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Cascading"/>
+			<item value="BiManyToMany"/>
 			<item value="BiOneToMany"/>
 			<item value="BiOneToOne"/>
 			<item value="EmployeeDB"/>

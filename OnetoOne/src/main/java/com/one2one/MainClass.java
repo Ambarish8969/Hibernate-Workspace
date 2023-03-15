@@ -40,5 +40,7 @@ public class MainClass {
 		entityManager.persist(adharCard1);
 		entityManager.persist(adharCard2);
 		entityTransaction.commit();
+		
+//		System.out.println(org.hibernate.Version.getVersionString()); // TO CHECK VERSION OF HIBERNATE.
 	}
 }
