@@ -2,9 +2,9 @@
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+@Entity // It is used to create a Table.
 public class Student {
-	@Id
+	@Id // Id should be an Integer.
 	private int id;
 	private String name;
 	private int age;

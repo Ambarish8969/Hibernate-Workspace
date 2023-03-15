@@ -11,6 +11,7 @@ public class Student2 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // It will generate the ID automatically.
 	private int id;
+	// length is used only for Strings
 	@Column(name="std_name",nullable = false,length=5)  // It will set the column name as "std_name" ,it can't be null and length should be only 5.
 	private String name;
 	private int age;
