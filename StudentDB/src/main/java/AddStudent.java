@@ -32,5 +32,6 @@ public class AddStudent {
 		entityManager.persist(s2);
 //		entityManager.persist(s3);
 		entityTransaction.commit();
+		
 	}
 }
