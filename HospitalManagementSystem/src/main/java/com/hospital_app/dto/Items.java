@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 public class Items {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int ItemId;
+	private int itemId;
 	private String name;
 	private double cost;
 	private double Quantity;
@@ -20,11 +20,11 @@ public class Items {
 	private Medorder medOrder;
 
 	public int getItemId() {
-		return ItemId;
+		return itemId;
 	}
 
 	public void setItemId(int itemId) {
-		ItemId = itemId;
+		itemId = itemId;
 	}
 
 	public String getName() {
