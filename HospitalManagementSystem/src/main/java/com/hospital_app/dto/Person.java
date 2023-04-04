@@ -18,8 +18,17 @@ public class Person {
 	private long phno;
 	private int age;
 	private String gender;
-	@OneToMany
+	private String dob;
+	@OneToMany(mappedBy = "person")
 	private List<Encounter> encounter;
+
+	public String getDob() {
+		return dob;
+	}
+
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
 
 	public int getPersonId() {
 		return personId;

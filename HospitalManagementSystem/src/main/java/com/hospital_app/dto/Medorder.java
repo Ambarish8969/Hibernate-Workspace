@@ -6,20 +6,32 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-@Entity
+@Entity 
 public class Medorder {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int mid;
 	private String dname;
 	private String orderdate;
-	@OneToMany
+	private int total;
+	@OneToMany(mappedBy = "medOrder")
 	private List<Items> items;
 	@ManyToOne
-	Encounter encounter;
+	@JoinColumn
+	private Encounter encounter;
+	
+
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
 
 	public int getMid() {
 		return mid;

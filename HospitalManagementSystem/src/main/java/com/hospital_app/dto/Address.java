@@ -14,7 +14,7 @@ public class Address {
 	private String street;
 	private String state;
 	private String country;
-	@OneToOne
+	@OneToOne(mappedBy = "address")
 	private Branch branch;
 
 	public int getId() {

@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="F:\HIbernate Workspace\ImageAdding\src\main\java\com\image\MainClass.java"/>
 			<item value="F:\HIbernate Workspace\StudentDB\src\main\java\AddStudent.java"/>
 			<item value="F:\HIbernate Workspace\OnetoOne\src\main\java\com\one2one\MainClass.java"/>
 			<item value="F:\HIbernate Workspace\EmployeeDB\src\main\java\com\employee2\DeleteEmployee.java"/>
@@ -48,6 +49,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.project"/>
 			<item value="com.image"/>
 			<item value="com.lastcrud"/>
 			<item value="com.cascading"/>
@@ -65,6 +67,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="HospitalManagementSystem"/>
 			<item value="ImageAdding"/>
 			<item value="LastCRUD"/>
 			<item value="Cascading"/>

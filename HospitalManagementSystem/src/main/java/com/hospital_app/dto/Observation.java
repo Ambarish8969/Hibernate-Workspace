@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -11,10 +12,11 @@ public class Observation {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int Oid;
-	private String dname;
-	private String robservtion;
+	private String doctor_name;
+	private String reason_observtion;
 	@ManyToOne
-	private Encounter encounter;
+	@JoinColumn
+	private Encounter encounters;
 
 	public int getOid() {
 		return Oid;
@@ -24,28 +26,28 @@ public class Observation {
 		Oid = oid;
 	}
 
-	public String getDname() {
-		return dname;
+	public String getDoctorName() {
+		return doctor_name;
 	}
 
-	public void setDname(String dname) {
-		this.dname = dname;
+	public void setDoctorName(String dname) {
+		this.doctor_name = dname;
 	}
 
-	public String getRobservtion() {
-		return robservtion;
+	public String getReason_observtion() {
+		return reason_observtion;
 	}
 
-	public void setRobservtion(String robservtion) {
-		this.robservtion = robservtion;
+	public void setReason_observtion(String robservtion) {
+		this.reason_observtion = robservtion;
 	}
 
-	public Encounter getEncounter() {
-		return encounter;
+	public Encounter getEncounters() {
+		return encounters;
 	}
 
-	public void setEncounter(Encounter encounter) {
-		this.encounter = encounter;
+	public void setEncounters(Encounter encounter) {
+		this.encounters = encounter;
 	}
 
 }
