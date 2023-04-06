@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 public class Observation {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int Oid;
+	private int oId;
 	private String doctor_name;
 	private String reason_observtion;
 	@ManyToOne
@@ -19,11 +19,11 @@ public class Observation {
 	private Encounter encounters;
 
 	public int getOid() {
-		return Oid;
+		return oId;
 	}
 
 	public void setOid(int oid) {
-		Oid = oid;
+		oId = oid;
 	}
 
 	public String getDoctorName() {
