@@ -19,5 +19,5 @@ public interface PersonDao {
 
 	public List<Person> getPersonByAge(int age);
 
-	public List<Person> gerPersonByPhone(long phone);
+	public List<Person> getPersonByPhone(long phone);
 }

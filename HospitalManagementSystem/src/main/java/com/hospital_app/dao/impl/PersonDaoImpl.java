@@ -126,7 +126,7 @@ public class PersonDaoImpl implements PersonDao {
 	}
 
 	@Override
-	public List<Person> gerPersonByPhone(long phone) {
+	public List<Person> getPersonByPhone(long phone) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("ambika");
 		EntityManager em = emf.createEntityManager();
 		EntityTransaction et = em.getTransaction();

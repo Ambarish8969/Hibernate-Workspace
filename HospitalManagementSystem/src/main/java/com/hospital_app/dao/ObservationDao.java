@@ -5,7 +5,7 @@ import java.util.List;
 import com.hospital_app.dto.Observation;
 
 public interface ObservationDao {
-	public Observation saveObervation(int eid,Observation observation);
+	public Observation saveObservation(int eid,Observation observation);
 	
 	public Observation getObservationId(int oid);
 	

@@ -9,7 +9,6 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 import com.hospital_app.dao.UserDao;
-import com.hospital_app.dto.Person;
 import com.hospital_app.dto.User;
 
 public class UserDaoImpl implements UserDao {

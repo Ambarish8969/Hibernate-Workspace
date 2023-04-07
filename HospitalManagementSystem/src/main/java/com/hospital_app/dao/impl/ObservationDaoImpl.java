@@ -15,7 +15,7 @@ import com.hospital_app.dto.Observation;
 public class ObservationDaoImpl implements ObservationDao {
 
 	@Override
-	public Observation saveObervation(int eid, Observation observation) {
+	public Observation saveObservation(int eid, Observation observation) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("ambika");
 		EntityManager em = emf.createEntityManager();
 		EntityTransaction et = em.getTransaction();

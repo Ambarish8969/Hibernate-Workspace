@@ -48,4 +48,8 @@
     <fullyQualifiedTypeName name="javax.persistence.EntityTransaction"/>
     <fullyQualifiedTypeName name="com.hospital_app.dao.BranchDao"/>
     <fullyQualifiedTypeName name="javax.persistence.Query"/>
+    <fullyQualifiedTypeName name="com.hospital_app.dao.EncounterDao"/>
+    <fullyQualifiedTypeName name="com.hospital_app.dao.AddressDao"/>
+    <fullyQualifiedTypeName name="com.hospital_app.dao.ItemDao"/>
+    <fullyQualifiedTypeName name="com.hospital_app.service.HospitalService"/>
 </qualifiedTypeNameHistroy>
