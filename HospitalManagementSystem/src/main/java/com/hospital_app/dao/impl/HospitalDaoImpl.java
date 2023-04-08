@@ -17,7 +17,7 @@ public class HospitalDaoImpl implements HospitalDao {
 		EntityTransaction et = em.getTransaction();
 
 		et.begin();
-		em.persist(et);
+		em.persist(hospital);
 		et.commit();
 
 		return hospital;

@@ -7,7 +7,7 @@ public class HospitalService {
 	public void saveHospital(Hospital hospital) {
 		HospitalDaoImpl daoimp = new HospitalDaoImpl();
 		Hospital hospital1 = daoimp.saveHospital(hospital);
-		if (hospital != null) {
+		if (hospital1 != null) {
 			System.out.println("Data Saved.");
 		} else {
 			System.out.println("Data not Saved.");

@@ -21,7 +21,7 @@ public class PersonDaoImpl implements PersonDao {
 
 		Person person1 = em.find(Person.class, personId);
 
-		if (person != null) {
+		if (person1 != null) {
 			et.begin();
 			em.persist(person1);
 			et.commit();
